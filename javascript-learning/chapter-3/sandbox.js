@@ -104,3 +104,20 @@ switch (grade) {
   default:
     console.log("Invalid grade");
 }
+
+// global scope
+let sum = 30;
+if (true) {
+  sum = 50;
+  console.log(sum); // 50
+}
+console.log(sum); // 50
+
+// local scope
+let total = 50;
+if (true) {
+  let total = 100;
+  console.log(total); // 100
+}
+
+console.log(total); // 50
