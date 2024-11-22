@@ -24,4 +24,12 @@ while (count < 5) {
 }
 console.log("while loop finished");
 
+// Do- while loops
+let i = 5;
+
+do {
+  console.log("do-while loop", i);
+  i++;
+} while (i < 5);
+
 
