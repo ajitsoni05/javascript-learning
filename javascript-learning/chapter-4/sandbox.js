@@ -48,4 +48,17 @@ const sum = addNumbers(5, 10);
 
 console.log(sum);
 
-console.log(sum+10);
+console.log(sum + 10);
+
+// arrow functions
+const calcArea = (radius) => {
+    return 3.14 * radius ** 2;
+};
+
+
+console.log(calcArea(5));
+
+// when there is only one parameter
+const greetPerson = name => `Hello, ${name}!`;
+
+console.log(greetPerson("John"));
