@@ -17,3 +17,6 @@ const speak = function () {
 speak();
 speak();
 speak();
+
+
+// NOTE: function declarations are not hoisted while the function expression is hoisted
