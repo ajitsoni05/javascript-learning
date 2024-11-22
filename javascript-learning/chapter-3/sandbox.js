@@ -32,4 +32,28 @@ do {
   i++;
 } while (i < 5);
 
+// conditional statements
 
+// if statements
+
+const age = 20;
+
+if (age > 20) {
+  console.log("You are above 20");
+}
+
+const ninjas = ["shaun", "ryu", "chun-li", "yoshi"];
+
+if (ninjas.length > 3) {
+  console.log("that's a lot of ninjas");
+}
+
+const password = "p@sswordings";
+
+if (password.length >= 12) {
+  console.log("that password is mighty strong");
+} else if (password.length >= 8) {
+  console.log("that password is long enough");
+} else {
+  console.log("password is not long enough");
+}
