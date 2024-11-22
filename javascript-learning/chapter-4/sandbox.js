@@ -19,4 +19,4 @@ speak();
 speak();
 
 
-// NOTE: function declarations are not hoisted while the function expression is hoisted
+// NOTE: function declarations are  hoisted while the function expression isn't hoisted
