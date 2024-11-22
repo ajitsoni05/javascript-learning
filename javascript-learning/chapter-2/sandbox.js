@@ -194,8 +194,15 @@ console.log(name > 'shaum')
 
 let summation = 25;
 // loose comparison
-
+// true
 console.log('Comparing summation losely : ',summation == '25')
 
+// false
+console.log('Comparing summation not equal losely : ',summation != '25')
+
 // strict comparison 
+// fakse
 console.log('Comparing summation strictly : ',summation === '25')
+
+// true
+console.log('Comparing summation not equal strictly : ',summation!=='25')
