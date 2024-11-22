@@ -37,3 +37,15 @@ const greetAgain = function (name = "Guest", time = "morning") {
 greetAgain();
 greetAgain("Jane");
 greetAgain("Jane", "afternoon");
+
+// return keyword
+
+const addNumbers = function (a, b) {
+  return a + b;
+};
+
+const sum = addNumbers(5, 10);
+
+console.log(sum);
+
+console.log(sum+10);
