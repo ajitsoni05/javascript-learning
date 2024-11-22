@@ -52,13 +52,37 @@ console.log(sum + 10);
 
 // arrow functions
 const calcArea = (radius) => {
-    return 3.14 * radius ** 2;
+  return 3.14 * radius ** 2;
 };
-
 
 console.log(calcArea(5));
 
 // when there is only one parameter
-const greetPerson = name => `Hello, ${name}!`;
+const greetPerson = (name) => `Hello, ${name}!`;
 
 console.log(greetPerson("John"));
+
+// converting a simple function into arrow function
+
+const bill = function (products, tax) {
+  let total = 0;
+  for (let product of products) {
+    total += product;
+  }
+  return total + total * tax;
+};
+
+// arrow version
+const calculateBill = (products, tax) => {
+  let total = 0;
+  for (let product of products) {
+    total += product;
+  }
+  return total + total * tax;
+};
+
+products = [10, 20, 13, 30, 31];
+
+result = calculateBill(products,20)
+
+console.log(result)
