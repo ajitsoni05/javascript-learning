@@ -60,3 +60,30 @@ if (password.length >= 12 && password.includes("@")) {
 } else {
   console.log("password is not strong enough");
 }
+
+// logical not
+let user = false;
+if (!user) {
+  console.log("you must be logged to continue");
+}
+
+console.log(!true);
+console.log(!false);
+
+// break and continue
+
+const scores = [50, 24, 0, 30, 100, 20, 40];
+
+for (let i = 0; i < scores.length; i++) {
+
+  if (scores[i] === 0) {
+    console.log("you got a zero, you need to study harder!");
+    continue;
+  }
+  console.log("your score is " + scores[i]);
+
+  if (scores[i] === 100) {
+    console.log("Congratulations, you got a perfect score!");
+    break;
+  }
+}
