@@ -75,7 +75,6 @@ console.log(!false);
 const scores = [50, 24, 0, 30, 100, 20, 40];
 
 for (let i = 0; i < scores.length; i++) {
-
   if (scores[i] === 0) {
     console.log("you got a zero, you need to study harder!");
     continue;
@@ -86,4 +85,22 @@ for (let i = 0; i < scores.length; i++) {
     console.log("Congratulations, you got a perfect score!");
     break;
   }
+}
+
+// switch statements and strict equality
+
+const grade = "50";
+
+switch (grade) {
+  case 50:
+    console.log("Excellent job!");
+    break;
+  case "B":
+    console.log("Good job!");
+    break;
+  case "C":
+    console.log("You can do better!");
+    break;
+  default:
+    console.log("Invalid grade");
 }
