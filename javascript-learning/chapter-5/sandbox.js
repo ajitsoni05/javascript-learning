@@ -47,9 +47,11 @@ user = {
   logout: function () {
     console.log("user is logged out");
   },
-  // accessing methods
+  logBlogs: function () {
+    console.log(this.blogs);
+  },
 };
 
 user.login();
 user.logout();
-
+user.logBlogs();
