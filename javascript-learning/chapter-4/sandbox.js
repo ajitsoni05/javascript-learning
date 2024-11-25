@@ -83,6 +83,23 @@ const calculateBill = (products, tax) => {
 
 products = [10, 20, 13, 30, 31];
 
-result = calculateBill(products,20)
+result = calculateBill(products, 20);
 
-console.log(result)
+console.log(result);
+
+// callback functions | we can pass a function as an argument
+// and this function is called callback function
+
+let people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
+
+people.forEach((person, index) => {
+  console.log(index, person);
+});
+
+// Alternatively we can create an arrow function and call forEach method with that arrow function
+
+const logPerson = (person, index) => {
+  console.log(index, person);
+};
+
+people.forEach(logPerson);
