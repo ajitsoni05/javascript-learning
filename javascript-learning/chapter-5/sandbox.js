@@ -104,3 +104,32 @@ const random = Math.random();
 
 // generates a random number between 0 and 100
 console.log(Math.round(random * 100));
+
+
+// Object types have reference 
+// primitve vs reference
+
+let number = 10;
+let newNumber = number;
+
+console.log(number); // 10
+console.log(newNumber); // 10
+
+newNumber = 20;
+
+console.log(number); // 10
+
+// Changing one of them doesn't change the other one
+
+// reference values 
+let obj1 = { name: "John" };
+let obj2 = obj1;
+
+console.log(obj1); // { name: 'John' }
+console.log(obj2); // { name: 'John' }
+ 
+obj2.name = 'Shaun'
+
+console.log(obj1); // { name: 'Shaun' }
+
+// Changing one of them changes the other one as well
