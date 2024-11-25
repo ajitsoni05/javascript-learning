@@ -55,3 +55,34 @@ user = {
 user.login();
 user.logout();
 user.logBlogs();
+
+// window object
+// console.log(this);
+
+/*
+ using arrow function as a method inside object literal 
+ would make the usage of this keyword as window object instead of 
+*/
+
+// regular function method with shorthand notation
+user = {
+  name: "crystal",
+  age: 30,
+  email: "crystal@netninja.co.uk",
+  location: "berlin",
+  blogs: ["why mac and cheese", "10 things to make with marmite"],
+  login() {
+    console.log("user is logged in");
+  },
+  logout() {
+    console.log("user is logged out");
+  },
+  logBlogs() {
+    console.log(this.blogs);
+  },
+  logLocation() {
+    console.log(`User's location is ${this.location}`);
+  },
+};
+
+user.logLocation();
