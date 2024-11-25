@@ -23,3 +23,10 @@ const paraTags = document.querySelectorAll("p");
 paraTags.forEach((para) => {
   console.log(para);
 });
+
+// getting all the class error tags
+console.log("Getting all the class error tags...");
+const errorTags = document.querySelectorAll(".error");
+
+// logging one of the error tags
+console.log(errorTags[1])
