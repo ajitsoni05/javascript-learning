@@ -44,7 +44,12 @@ user = {
   login: function () {
     console.log("user is logged in");
   },
+  logout: function () {
+    console.log("user is logged out");
+  },
+  // accessing methods
 };
 
 user.login();
+user.logout();
 
