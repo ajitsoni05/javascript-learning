@@ -9,6 +9,7 @@
     <p id="demo"></p>
     <p id="some"></p>
     <p id="numbers"></p>
+    <p id="sum"></p>
     <script>
         // JavaScript functions are executed in the order of their calls 
         // and not in the order of their definition.
@@ -51,6 +52,14 @@
            return filterdNums
         }
 
+
+        // realUse of callbacks in async functions 
+        setTimeout(function(){myCalculator2(2,3)},3000);
+
+        function myCalculator2(a,b){
+            let sum =a+b;
+            document.getElementById("sum").innerHTML = sum;
+        }
 
     </script>
     
