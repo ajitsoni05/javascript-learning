@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="some"></p>
+    <script>
+        // JavaScript functions are executed in the order of their calls 
+        // and not in the order of their definition.
+        function first(){
+            myFunc("Hello!")
+        }
+        function second(){
+            myFunc("Goodbye")
+        }
+        function myFunc(some){
+            document.getElementById("demo").innerHTML = some
+        }
+        second();
+        first();
+
+        // A callback is a function that is passed as an argument into another function 
+        function myCalculator(a,b,someCallBackFunc){
+            let sum = a+b;
+            myCallBackFunc(sum);
+        }
+        function myCallBackFunc(some){
+            document.getElementById("some").innerHTML = some
+        }
+        myCalculator(2,8,myCallBackFunc);
+
+        
+    </script>
+    
+</body>
+</html>
