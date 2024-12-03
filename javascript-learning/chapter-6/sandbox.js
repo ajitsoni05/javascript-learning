@@ -29,4 +29,25 @@ console.log("Getting all the class error tags...");
 const errorTags = document.querySelectorAll(".error");
 
 // logging one of the error tags
-console.log(errorTags[1])
+console.log(errorTags[1]);
+
+// get element by ID
+
+// get elements by their class name
+
+// get elements by their tag name
+
+const paras = document.querySelectorAll("p");
+
+console.log("Printing all the inner text of all tha para tags...");
+paras.forEach((para) => {
+  console.log(para.innerText);
+});
+
+const content = document.querySelector(".content");
+
+const people = ["mario", "luigi", "yoshi"];
+
+people.forEach((person) => {
+  content.innerHTML += `<p>${person}</p>`;
+});
